@@ -11,7 +11,7 @@ python test.py --dataroot ./datasets/$EXP_NAME/testA --model test --name $EXP_NA
 
 cp ./checkpoints/$EXP_NAME/latest_net_G_B.pth ./checkpoints/$OUT_NAME/latest_net_G.pth
 
-python test.py --dataroot ./datasets/$EXP_NAME/testB --model test --name $OUT_NAME --load_size 1024 --crop_size 400 --preprocess scale_width_and_crop --dataset_mode single --no_drop --num_test 20000
+python test.py --dataroot ./datasets/$EXP_NAME/testB --model test --name $OUT_NAME --load_size 1024 --preprocess scale_width --dataset_mode single --no_drop --num_test 20000
 
 mkdir ./results/$EXP_NAME/test_latest/train2017_$EXP_NAME
 mkdir ./results/$OUT_NAME/test_latest/train2017_$OUT_NAME
